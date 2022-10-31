@@ -1,4 +1,12 @@
-#p1{
-    font-size: 50em;
-    text-align: center;
+.coloredArea{
+    background-color: rgba(0,0,0,0.07);
+}
+.coloredArea2{
+    background-color: rgba(0,0,0,0.4);
+}
+.coloredArea3{
+    background-color: rgba(0,0,0,0.23);
+}
+.coloredArea4{
+    background-color: rgba(0,0,0,0.13);
 }
