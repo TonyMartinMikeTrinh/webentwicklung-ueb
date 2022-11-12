@@ -56,60 +56,81 @@
         </div>
 
 
-        <div class="col-10">
+        <div class="col-8">
 
 
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    ToDo:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        HTML Datei erstellen (Max Mustermann)
-                                    </div>
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        CSS Datei erstellen (Max Mustermann)
-                                    </div>
-                                </div>
-                            </div>
+                    <table class="table">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">E-Mail</th>
+                            <th scope="col">In Projekt</th>
+                            <th scope="col" style="align-items: end"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Max Mustermann</td>
+                            <td>mustermann@muster.de</td>
+                            <td><input type="checkbox"></td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
 
+                        </tr>
+                        <tr>
+                            <td>Petra Müller</td>
+                            <td>petra@mueller.de</td>
+                            <td><input type="checkbox"></td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                    <label for="box" style="font-size:calc(1.5px + 1.5vw)">Bearbeiten/Ertellen</label>
+                    <div id="box">
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="uName" >Username:</label>
+                            <input type="text" id="uName" class="form-control" placeholder="Username"/>
                         </div>
-                        <div class="col"><div class="coloredArea">
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    Erledigt:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        PC eingeschaltet (Petra Müller)
-                                    </div>
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        Kaffee trinken (Petra Müller)
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="mail" >E-Mail-Adresse:</label>
+                            <input type="email" id="mail" class="form-control" placeholder="E-Mail-Adresse angeben"/>
+                        </div>
 
-                        </div></div>
-                        <div class="col"><div class="coloredArea">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="passwort" >Passwort:</label>
+                            <input type="password" id="passwort" class="form-control" placeholder="Passwort angeben"/>
+                        </div>
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    Verschoben:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        Für die Uni lernen (Max Mustermann)
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-outline mb-4">
+                            <label for="selectpicker" >Zugehöriger Reiter:</label>
+                            <select class="selectpicker form-control" aria-label=".form-select-lg example" id="selectpicker">
+                                <option selected>ToDo</option>
+                                <option>HTML Datei erstellen</option>
+                                <option>CSS Datei erstellen</option>
+                            </select>
+                        </div>
 
-                        </div></div>
+                        <div class="form-outline mb-4">
+                            <input type="checkbox"> Dem Projekt zugeordnet
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary">Speichern</button>
+                            <button type="button" class="btn btn-primary" style="background-color: #0cc9ad">Reset</button>
+                        </div>
+
                     </div>
+
                 </div>
 
 

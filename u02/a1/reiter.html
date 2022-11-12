@@ -56,59 +56,66 @@
         </div>
 
 
-        <div class="col-10">
+        <div class="col-8">
 
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
+                    
+                    <table class="table">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Beschreibung</th>
+                            <th scope="col" style="align-items: end"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>ToDo</td>
+                            <td>Dinge die erledigt werden müssen.</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    ToDo:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        HTML Datei erstellen (Max Mustermann)
-                                    </div>
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        CSS Datei erstellen (Max Mustermann)
-                                    </div>
-                                </div>
-                            </div>
+                        </tr>
+                        <tr>
+                            <td>Erledigt</td>
+                            <td>Dinge die erledigt sind.</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
 
+                        </tr>
+                        <tr>
+                            <td>Verschoben</td>
+                            <td>Dinge die später erledigt werden.</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <label for="box" style="font-size:calc(1.5px + 1.5vw)">Bearbeiten/Ertellen</label>
+                    <div id="box">
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="pName" >Beschreibung des Reiters:</label>
+                            <input type="text" id="pName" class="form-control" placeholder="Reiter"/>
                         </div>
-                        <div class="col"><div class="coloredArea">
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    Erledigt:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        PC eingeschaltet (Petra Müller)
-                                    </div>
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        Kaffee trinken (Petra Müller)
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="pDesc">Beschreibung:</label>
+                            <textarea class="form-control" id="pDesc" rows="3" placeholder="Beschreibung"></textarea>
+                        </div>
 
-                        </div></div>
-                        <div class="col"><div class="coloredArea">
+                        <div style="margin-top: 2vw">
+                            <button type="button" class="btn btn-primary">Speichern</button>
+                            <button type="button" class="btn btn-primary" style="background-color: #0cc9ad">Reset</button>
+                        </div>
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    Verschoben:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        Für die Uni lernen (Max Mustermann)
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div></div>
                     </div>
+                    
                 </div>
 
 

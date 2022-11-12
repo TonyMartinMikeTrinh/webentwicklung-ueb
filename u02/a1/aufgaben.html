@@ -56,60 +56,123 @@
         </div>
 
 
-        <div class="col-10">
+        <div class="col-8">
 
 
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
+                    <table class="table">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Aufgabenbezeichnung:</th>
+                            <th scope="col">Beschreibung der Aufgabe:</th>
+                            <th scope="col">Reiter:</th>
+                            <th scope="col">Zuständig:</th>
+                            <th scope="col" style="align-items: end"> </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>HTML Datei erstellen</td>
+                            <td>HTML Datei erstellen</td>
+                            <td>ToDo</td>
+                            <td>Max Mustermann</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    ToDo:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        HTML Datei erstellen (Max Mustermann)
-                                    </div>
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        CSS Datei erstellen (Max Mustermann)
-                                    </div>
-                                </div>
-                            </div>
+                        </tr>
+                        <tr>
+                            <td>CSS Datei erstellen</td>
+                            <td>HTML Datei erstellen</td>
+                            <td>ToDo</td>
+                            <td>Max Mustermann</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
 
+                        </tr>
+                        <tr>
+                            <td>PC eingeschalet</td>
+                            <td>PC einschalten</td>
+                            <td>Erledigt</td>
+                            <td>Max Mustermann</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Kaffee trinken</td>
+                            <td>Kaffee trinken</td>
+                            <td>Erledigt</td>
+                            <td>Petra Müller</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Für die Uni lernen</td>
+                            <td>Für die Uni lernen.</td>
+                            <td>Verschoben</td>
+                            <td>Max Mustermann</td>
+                            <td><img src="img/trash96.png" alt="change"  class="rounded float-right" width="25vw" style="margin-left: 20px">
+                                <img src="img/write96.png" alt="change"  class="rounded float-right" width="25vw">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                    <label for="box" style="font-size:calc(1.5px + 1.5vw)">Bearbeiten/Ertellen</label>
+                    <div id="box">
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="pName" >Aufgabenbezeichnung</label>
+                            <input type="text" id="pName" class="form-control" placeholder="Aufgabe"/>
                         </div>
-                        <div class="col"><div class="coloredArea">
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    Erledigt:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        PC eingeschaltet (Petra Müller)
-                                    </div>
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        Kaffee trinken (Petra Müller)
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="pDesc">Beschreibung der Aufgabe:</label>
+                            <textarea class="form-control" id="pDesc" rows="3" placeholder="Beschreibung"></textarea>
+                        </div>
 
-                        </div></div>
-                        <div class="col"><div class="coloredArea">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="eDate" >Erstelldatum:</label>
+                            <input type="date" id="eDate" class="form-control"/>
+                        </div>
 
-                            <div class="card">
-                                <div class="card-header" style="font-size: 1.2vw;">
-                                    Verschoben:
-                                </div>
-                                <div class="list-group">
-                                    <div class="list-group-item" style="font-size: 1.2vw">
-                                        Für die Uni lernen (Max Mustermann)
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="lDate" >fällig bis:</label>
+                            <input type="date" id="lDate" class="form-control"/>
+                        </div>
 
-                        </div></div>
+                        <div class="form-outline mb-4">
+                        <label for="selectpicker" >Zugehöriger Reiter:</label>
+                        <select class="selectpicker form-control" aria-label=".form-select-lg example" id="selectpicker">
+                            <option selected>ToDo</option>
+                            <option>HTML Datei erstellen</option>
+                            <option>CSS Datei erstellen</option>
+                        </select>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                        <label for="selectpicker2" >Zuständig:</label>
+                        <select class="selectpicker form-control" aria-label=".form-select-lg example" id="selectpicker2">
+                            <option selected>Max Mustermann</option>
+                            <option>Max Mustermann</option>
+                            <option>Petra Müller</option>
+                        </select>
+                        </div>
+
+
+                        <div style="margin-top: 2vw">
+                            <button type="button" class="btn btn-primary">Speichern</button>
+                            <button type="button" class="btn btn-primary" style="background-color: #0cc9ad">Reset</button>
+                        </div>
+
                     </div>
+
                 </div>
 
 
