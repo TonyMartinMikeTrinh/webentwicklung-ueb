@@ -9,7 +9,7 @@
 <body>
 
 <?php
-    $name = 'Login';
+    $name = 'Aufgabenplaner: Login';
     include ('header.php');
 ?>
 
@@ -47,7 +47,7 @@
                     Noch nicht registriert? <a href="">Registrierung</a>
                     <br>
                     <br>
-                    Da der Login Vorgang technisch noch nicht realisiert wurde: <a href="akutellesProjekt.html">Überspringen</a>
+                    Da der Login Vorgang technisch noch nicht realisiert wurde: <a href="aktuelellesProjekt.php">Überspringen</a>
                 </div>
 
 
